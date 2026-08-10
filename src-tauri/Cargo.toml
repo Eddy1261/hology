@@ -1,0 +1,33 @@
+[package]
+name = "aiconnect-desktop"
+version = "1.0.0"
+description = "AI CONNECT desktop shell (Tauri) — spawns the gateway sidecar"
+edition = "2021"
+
+[lib]
+name = "aiconnect_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# Phase 5R: offline local-data layer opens the SAME redb files the gateway
+# owns when it is not running (single authoritative store, no divergence).
+context-store = { path = "../../../packages/context-store" }
+# Session persistence: OS keychain (pure-rust secret-service/zbus on Linux)
+keyring = "2"
+# Google OAuth PKCE + loopback listener
+rand = "0.8"
+sha2 = "0.10"
+base64 = "0.22"
+ureq = { version = "2", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+# CP20: transactional connector installer (secure extract + atomic commit)
+installer = { path = "../../../packages/installer" }
+# CP21: publisher signature envelope + local trust store (production
+# install path runs installer::install_authenticated against these types)
+signature = { path = "../../../packages/signature" }

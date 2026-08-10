@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "AI CONNECT",
+  "version": "1.0.0",
+  "identifier": "app.aiconnect.desktop",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:8443",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "AI CONNECT",
+        "width": 398,
+        "height": 565,
+        "resizable": false,
+        "decorations": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis",
+      "deb",
+      "appimage"
+    ],
+    "externalBin": [
+      "binaries/gateway",
+      "binaries/mcp-stdio-bridge"
+    ],
+    "resources": [
+      "runtime/**/*"
+    ],
+    "icon": [
+      "icons/icon.ico",
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png"
+    ],
+    "windows": {
+      "nsis": {
+        "installerHooks": "windows/hooks.nsh"
+      }
+    }
+  }
+}
