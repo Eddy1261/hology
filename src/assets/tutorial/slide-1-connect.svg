@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 190" fill="none">
+  <!-- Slide 1: AI ↔ AiConnect ↔ external software -->
+  <defs>
+    <linearGradient id="s1-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10151d"/>
+      <stop offset="1" stop-color="#0a0e14"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="190" rx="14" fill="url(#s1-bg)"/>
+  <!-- glow -->
+  <circle cx="180" cy="95" r="64" fill="#3b82f6" opacity="0.12"/>
+  <!-- center AiConnect node -->
+  <rect x="150" y="66" width="60" height="58" rx="18" fill="#e8eef6"/>
+  <rect x="158" y="76" width="44" height="30" rx="15" fill="#0a0e14"/>
+  <circle cx="172" cy="91" r="5" fill="#5b9bff"/>
+  <circle cx="188" cy="91" r="5" fill="#5b9bff"/>
+  <path d="M174 98 q6 4 12 0" stroke="#5b9bff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- connections -->
+  <path d="M150 82 C110 60 84 62 70 80" stroke="#3b82f6" stroke-width="1.6" stroke-dasharray="3 4" opacity="0.7"/>
+  <path d="M150 106 C112 128 86 124 72 108" stroke="#3b82f6" stroke-width="1.6" stroke-dasharray="3 4" opacity="0.7"/>
+  <path d="M210 82 C250 60 276 62 290 80" stroke="#3b82f6" stroke-width="1.6" stroke-dasharray="3 4" opacity="0.7"/>
+  <path d="M210 106 C248 128 274 124 288 108" stroke="#3b82f6" stroke-width="1.6" stroke-dasharray="3 4" opacity="0.7"/>
+  <!-- software nodes -->
+  <rect x="38" y="64" width="34" height="34" rx="8" fill="#10151d" stroke="#5b9bff" stroke-width="1.4"/>
+  <path d="M45 78h6v6h-6zM51 78h6v6h-6zM45 84h6v6h-6zM51 84h6v6h-6z" fill="#5b9bff"/>
+  <rect x="38" y="96" width="34" height="34" rx="8" fill="#10151d" stroke="#5b9bff" stroke-width="1.4"/>
+  <path d="M48 106v4M45 108h6M55 106v4M52 108h6" stroke="#5b9bff" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="288" y="64" width="34" height="34" rx="8" fill="#10151d" stroke="#5b9bff" stroke-width="1.4"/>
+  <path d="M298 82h14M304 72l14 20" stroke="#5b9bff" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="288" y="96" width="34" height="34" rx="8" fill="#10151d" stroke="#5b9bff" stroke-width="1.4"/>
+  <path d="M300 100h6a2 2 0 0 1 2 2v22a2 2 0 0 1-2 2h-6zM310 100h6a2 2 0 0 1 2 2v22a2 2 0 0 1-2 2h-6z" stroke="#5b9bff" stroke-width="1.4"/>
+  <!-- sparkle -->
+  <path d="M180 36v6M177 39h6" stroke="#5b9bff" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

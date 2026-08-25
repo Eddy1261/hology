@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 190" fill="none">
+  <!-- Slide 5: You're All Set -->
+  <defs>
+    <linearGradient id="s5-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10151d"/>
+      <stop offset="1" stop-color="#0a0e14"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="190" rx="14" fill="url(#s5-bg)"/>
+  <!-- glow -->
+  <circle cx="180" cy="95" r="70" fill="#10b981" opacity="0.1"/>
+  <!-- success circle -->
+  <circle cx="180" cy="88" r="38" fill="#10151d" stroke="#10b981" stroke-width="2.5"/>
+  <!-- checkmark -->
+  <path d="M164 88 L176 100 L200 76" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- decorative rings -->
+  <circle cx="180" cy="88" r="50" stroke="#10b981" stroke-width="1" opacity="0.2" fill="none"/>
+  <circle cx="180" cy="88" r="60" stroke="#10b981" stroke-width="0.8" opacity="0.1" fill="none"/>
+  <!-- small dots -->
+  <circle cx="90" cy="88" r="2.5" fill="#10b981" opacity="0.4"/>
+  <circle cx="270" cy="88" r="2.5" fill="#10b981" opacity="0.4"/>
+  <circle cx="110" cy="60" r="2" fill="#10b981" opacity="0.3"/>
+  <circle cx="250" cy="116" r="2" fill="#10b981" opacity="0.3"/>
+  <!-- sparkle -->
+  <path d="M180 26v6M177 29h6" stroke="#10b981" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 190" fill="none">
+  <!-- Slide 4: Help & FAQ -->
+  <defs>
+    <linearGradient id="s4-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10151d"/>
+      <stop offset="1" stop-color="#0a0e14"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="190" rx="14" fill="url(#s4-bg)"/>
+  <!-- glow -->
+  <circle cx="180" cy="95" r="64" fill="#3b82f6" opacity="0.12"/>
+  <!-- center help circle -->
+  <circle cx="180" cy="88" r="36" fill="#10151d" stroke="#5b9bff" stroke-width="2"/>
+  <text x="180" y="98" text-anchor="middle" font-family="system-ui, sans-serif" font-size="38" font-weight="700" fill="#5b9bff">?</text>
+  <!-- FAQ lines left -->
+  <rect x="60" y="60" width="60" height="8" rx="4" fill="#5b9bff" opacity="0.3"/>
+  <rect x="60" y="76" width="45" height="6" rx="3" fill="#5b9bff" opacity="0.2"/>
+  <rect x="60" y="92" width="55" height="6" rx="3" fill="#5b9bff" opacity="0.2"/>
+  <rect x="60" y="108" width="40" height="6" rx="3" fill="#5b9bff" opacity="0.15"/>
+  <!-- FAQ lines right -->
+  <rect x="240" y="60" width="60" height="8" rx="4" fill="#5b9bff" opacity="0.3"/>
+  <rect x="240" y="76" width="50" height="6" rx="3" fill="#5b9bff" opacity="0.2"/>
+  <rect x="240" y="92" width="45" height="6" rx="3" fill="#5b9bff" opacity="0.2"/>
+  <rect x="240" y="108" width="55" height="6" rx="3" fill="#5b9bff" opacity="0.15"/>
+  <!-- connection dots -->
+  <circle cx="130" cy="88" r="3" fill="#5b9bff" opacity="0.5"/>
+  <circle cx="230" cy="88" r="3" fill="#5b9bff" opacity="0.5"/>
+  <path d="M133 88 L144 88" stroke="#5b9bff" stroke-width="1.2" stroke-dasharray="2 3" opacity="0.4"/>
+  <path d="M216 88 L227 88" stroke="#5b9bff" stroke-width="1.2" stroke-dasharray="2 3" opacity="0.4"/>
+  <!-- sparkle -->
+  <path d="M180 36v6M177 39h6" stroke="#5b9bff" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

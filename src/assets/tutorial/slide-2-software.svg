@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 190" fill="none">
+  <!-- Slide 2: software / applications into AiConnect -->
+  <defs>
+    <linearGradient id="s2-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10151d"/>
+      <stop offset="1" stop-color="#0a0e14"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="190" rx="14" fill="url(#s2-bg)"/>
+  <circle cx="270" cy="95" r="60" fill="#3b82f6" opacity="0.12"/>
+  <!-- app windows -->
+  <rect x="30" y="46" width="52" height="38" rx="9" fill="#10151d" stroke="#8b94a3" stroke-width="1.2" opacity="0.85"/>
+  <path d="M42 70h16M46 60l8 8" stroke="#8b94a3" stroke-width="1.5" stroke-linecap="round"/>
+  <rect x="30" y="104" width="52" height="38" rx="9" fill="#10151d" stroke="#8b94a3" stroke-width="1.2" opacity="0.85"/>
+  <rect x="40" y="116" width="10" height="10" rx="2" fill="#5b9bff"/>
+  <rect x="54" y="116" width="10" height="10" rx="2" fill="#5b9bff" opacity="0.6"/>
+  <rect x="40" y="130" width="10" height="10" rx="2" fill="#5b9bff" opacity="0.4"/>
+  <rect x="54" y="130" width="10" height="10" rx="2" fill="#5b9bff" opacity="0.3"/>
+  <rect x="108" y="72" width="46" height="46" rx="9" fill="#10151d" stroke="#8b94a3" stroke-width="1.2" opacity="0.85"/>
+  <path d="M120 82h4v4h-4zM128 82h4v4h-4zM120 90h4v4h-4zM128 90h4v4h-4z" fill="#5b9bff"/>
+  <rect x="108" y="104" width="46" height="34" rx="9" fill="#10151d" stroke="#8b94a3" stroke-width="1.2" opacity="0.85"/>
+  <path d="M118 116h12v6h-12zM134 116h12v12h-12z" fill="#5b9bff" opacity="0.8"/>
+  <!-- flow lines -->
+  <path d="M82 65 C120 55 150 60 176 82" stroke="#3b82f6" stroke-width="1.6" stroke-dasharray="3 4" opacity="0.75"/>
+  <path d="M82 123 C120 140 150 132 176 106" stroke="#3b82f6" stroke-width="1.6" stroke-dasharray="3 4" opacity="0.75"/>
+  <path d="M154 95 C170 95 176 95 180 95" stroke="#3b82f6" stroke-width="1.6" stroke-dasharray="3 4" opacity="0.75"/>
+  <!-- hub (AiConnect) -->
+  <circle cx="222" cy="95" r="34" fill="#0a0e14" stroke="#3b82f6" stroke-width="1.6"/>
+  <path d="M222 74 C230 82 214 90 222 98 C230 106 214 114 222 122" stroke="#5b9bff" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M222 78 l6 8 M222 90 l6 8 M222 102 l6 8 M222 114 l6 8" stroke="#5b9bff" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- out to capabilities -->
+  <path d="M256 95 C272 95 276 95 282 95" stroke="#3b82f6" stroke-width="1.6" stroke-dasharray="3 4" opacity="0.75"/>
+  <circle cx="296" cy="78" r="10" fill="#10151d" stroke="#5b9bff" stroke-width="1.4"/>
+  <circle cx="296" cy="95" r="10" fill="#10151d" stroke="#5b9bff" stroke-width="1.4"/>
+  <circle cx="296" cy="112" r="10" fill="#10151d" stroke="#5b9bff" stroke-width="1.4"/>
+  <circle cx="296" cy="78" r="3" fill="#5b9bff"/>
+  <circle cx="296" cy="95" r="3" fill="#5b9bff"/>
+  <circle cx="296" cy="112" r="3" fill="#5b9bff"/>
+</svg>
