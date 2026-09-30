@@ -4,7 +4,7 @@ Desktop companion app untuk mengelola koneksi **AI ↔ MCP (Model Context Protoc
 
 Aplikasi ini memudahkan pengguna menghubungkan asisten AI (ChatGPT, Claude, Cursor, Codex, dan lainnya) dengan berbagai MCP connector, memantau sesi kerja AI, mengatur proyek & workspace, serta mengelola skills yang aktif. Seluruh alur utama tersedia: onboarding tutorial, autentikasi (login, signup, pembayaran), dashboard konektor, koleksi MCP beserta panduan koneksi per-MCP, AI workspace/session, skills, help, dan settings. Data produk di-mock di belakang service layer (`src/lib/store/`), sementara integrasi nyata yang sudah berjalan adalah health probe gateway (`src/lib/gateway.ts`).
 
-## Anggota Kelompok — HOLOGY
+## Anggota Kelompok — K2
 
 | No | Nama | NIM |
 |----|------|-----|
