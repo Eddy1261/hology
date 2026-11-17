@@ -11,6 +11,14 @@ Aplikasi ini memudahkan pengguna menghubungkan asisten AI (ChatGPT, Claude, Curs
 | 1 | Abdul Halim Edi Rahmansyah | 23/516603/TK/56796 |
 | 2 | Reza Hanif Firmansyah | 23/522571/TK/57700 |
 
+## Tautan Proyek
+
+| Resource | Tautan | Status |
+|----------|--------|--------|
+| Web App (Deployed) | [Buka Web App (Placeholder)](https://placeholder-webapp-url.example.com) | Placeholder — ganti dengan URL deploy |
+| Video Demo | [Tonton Video Demo (Placeholder)](https://placeholder-video-url.example.com) | Placeholder — ganti dengan link video |
+| Laporan Proyek | [Buka Folder Google Drive](https://drive.google.com/drive/folders/1Uajg6uu6cwekXDKAz5xhMoPCuvA-V5Oq?usp=sharing) | Aktif |
+
 ## Struktur Folder dan File
 
 ```
@@ -129,8 +137,48 @@ hology/
 | Testing | Playwright (E2E), Node test runner (`node --experimental-strip-types`) |
 | Tooling | mise, PowerShell/Shell staging scripts |
 
-## Laporan
+## Dokumentasi Kode & Cara Menjalankan
 
-Laporan lengkap proyek dapat diakses melalui Google Drive:
+### 1. Prasyarat
+- **Node.js** & **pnpm** (`pnpm@11.24.0` sesuai `packageManager` di `package.json`)
+- **Rust & Cargo + Tauri CLI** (opsional, diperlukan jika membangun/menjalankan desktop shell di `src-tauri/`)
 
-https://drive.google.com/drive/folders/1Uajg6uu6cwekXDKAz5xhMoPCuvA-V5Oq?usp=sharing
+### 2. Instalasi & Perintah Utama
+```bash
+# Install dependensi frontend
+pnpm install
+
+# Menjalankan dev server frontend (Vite)
+pnpm dev
+
+# Type-checking TypeScript & Vue SFC
+pnpm typecheck
+
+# Build produksi frontend
+pnpm build
+
+# Preview hasil build produksi
+pnpm preview
+
+# Menjalankan unit test (Node test runner)
+pnpm test
+
+# Menjalankan pengujian E2E (Playwright)
+pnpm e2e
+
+# Menjalankan / membangun desktop app (Tauri)
+pnpm tauri dev
+pnpm tauri build
+```
+
+### 3. Arsitektur & Alur Kode
+- **Entry & Shell (`src/main.ts`, `src/App.vue`):** Menginisialisasi aplikasi Vue 3, router, dan design system Tailwind v4 dalam panel utama berukuran `398×675` beserta komponen toast global (`Toasts.vue`).
+- **Routing & Auth Guard (`src/lib/router.ts`):**
+  - **Rute publik:** `/`, `/login`, `/signup`, `/payment`
+  - **Rute terproteksi (`/app/*`, dibungkus `AppShell.vue`):** `/app` (`Dashboard`), `/app/projects` (`Projects`), `/app/workspace` (`AIWorkspace`), `/app/mcp` (`MCPCollection`), `/app/mcp/:id` (`MCPGuide`), `/app/skills` (`Skills`), `/app/help` (`Help`), dan `/app/settings` (`Settings`).
+  - `router.beforeEach` memeriksa `isAuthed`; pengguna yang belum terautentikasi diarahkan ke `/login` dan rute tujuan sebelumnya disimpan melalui `setPendingAuthRoute`.
+- **State & Service Layer (`src/lib/store/`):**
+  - `src/lib/store/index.ts` menjadi barrel export untuk state reaktif terpusat (`state`, `isAuthed`, `PLANS`, `toast`) dan modul layanan domain (`auth`, `billing`, `catalog`, `projects`, `context`, `sessions`, `skills`, `mcp`, `gateway`).
+- **Gateway Client & Desktop Shell (`src/lib/gateway.ts`, `src-tauri/src/`):**
+  - `src/lib/gateway.ts` menangani komunikasi ke gateway sidecar lokal (default `http://127.0.0.1:8788`, dapat di-override lewat `VITE_GATEWAY_URL`, atau di-resolve dinamis via `resolveGatewayUrl()` saat berjalan di Tauri).
+  - `src-tauri/src/lib.rs` dan `src-tauri/src/offline.rs` mengatur spawn gateway sidecar, penyimpanan kredensial di OS keychain (`keyring`), autentikasi Google OAuth PKCE loopback, serta layer akses data lokal saat offline.
