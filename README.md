@@ -13,11 +13,10 @@ Aplikasi ini memudahkan pengguna menghubungkan asisten AI (ChatGPT, Claude, Curs
 
 ## Tautan Proyek
 
-| Resource | Tautan | Status |
-|----------|--------|--------|
-| Web App (Deployed) | [Buka Web App (Placeholder)](https://placeholder-webapp-url.example.com) | Placeholder — ganti dengan URL deploy |
-| Video Demo | [Tonton Video Demo (Placeholder)](https://placeholder-video-url.example.com) | Placeholder — ganti dengan link video |
-| Laporan Proyek | [Buka Folder Google Drive](https://drive.google.com/drive/folders/1Uajg6uu6cwekXDKAz5xhMoPCuvA-V5Oq?usp=sharing) | Aktif |
+| Resource | Tautan |
+|----------|--------|
+| Desktop App | [Buka Rilis Desktop App](https://github.com/rezahanif/AICONNECT-RELEASE) |
+| Video Demo | [Tonton Video Demo](https://drive.google.com/drive/u/0/folders/1K-fRwTj0qa8vslVbdTlYVRb4cTHI6eV5) |
 
 ## Struktur Folder dan File
 
